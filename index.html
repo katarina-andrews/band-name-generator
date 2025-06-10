@@ -10,17 +10,25 @@
     <title>Band Name Generator</title>
   </head>
 
-  <body>
-    <div>
-      <h1>Band Name Generator</h1>
+  <body class="bg-[url(instruments.jpg)] bg-cover bg-no-repeat">
+    <div
+      class="flex flex-wrap flex-col w-fit content-center border gap-3 m-5 p-5 text-center"
+    >
+      <h1 class="text-3xl text-bold text-shadow-lg">Band Name Generator</h1>
 
-      <p>Click the button to reveal your new band name.</p>
+      <p class="">Click the button to reveal your new band name.</p>
 
-      <div id="band-name">
+      <div id="band-name" class="animate-typing">
         <!-- Band name will appear here -->
       </div>
-
-      <button id="generate-btn">Generate Name</button>
+      <div class="content-center">
+        <button
+          id="generate-btn"
+          class="text-white bg-zinc-800 hover:bg-zinc-600 rounded-lg p-3 text-lg cursor-pointer w-fit animate-bounce"
+        >
+          Generate Name
+        </button>
+      </div>
     </div>
 
     <script src="script.js"></script>
